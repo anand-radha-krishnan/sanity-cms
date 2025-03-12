@@ -24,6 +24,12 @@ export const experienceType = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      title: 'Organization',
+      name: 'organization',
+      type: 'string',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
       type: 'array',
       name: 'descriptions',
       title: 'Descriptions',
